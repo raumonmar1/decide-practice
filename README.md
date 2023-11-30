@@ -491,3 +491,6 @@ versiones usadas actualmente se corresponden a las siguientes:
 * Vue=3
 * Bootstrap=5.2
 * selenium = 4.7.2
+* 
+Badge
+[![Python application](https://github.com/raumonmar1/decide-practice/actions/workflows/django.yml/badge.svg)](https://github.com/raumonmar1/decide-practice/actions/workflows/django.yml)
