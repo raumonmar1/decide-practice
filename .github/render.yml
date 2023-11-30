@@ -1,0 +1,8 @@
+services:
+  - name: web
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn decide-practice.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: "local_settings.py"
