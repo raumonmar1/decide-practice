@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   buildTest:
-    uses: decide-practice/.github/workflows/django.yml@master
+    uses: raumonmar1/decide-practice/.github/workflows/django.yml@master
     secrets: 
       CODACY_PROJECT_TOKEN: ${{secrets.CODACY_PROJECT_TOKEN}}
      
