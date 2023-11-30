@@ -57,4 +57,12 @@ jobs:
       with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
           coverage-reports: decide/coverage.xml
+    - name: Change permissions on decide (Make static directory tree readable)
+      become: yes
+      file:
+        path: /home/decide
+        owner: "decide"
+        recurse: yes
+        group: decide
+        mode: "555"
 
